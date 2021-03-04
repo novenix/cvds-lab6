@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script>
+                function submitForm() {
+                    if (isNaN(document.forms["completeForm"]["numberId"].value)) {
+                        alert("debe ingresar un numero");
+                        return false;
+                    }
+                }
+        </script>
+        <h1>Hello World!</h1>
+        <form action="/servletExtension" method="GET" name="completeForm" >
+            <label for="numberId"> numero: </label>
+            <input type="text" id="numberId" name="id" >
+            <input onclick="submitForm()" type="submit" >
+        </form>
+    </body>
+</html>
