@@ -4,26 +4,28 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
-    <h:body>
+    <h:body style="background-color: #f6c900; font-family:verdana;" >
+        <img style=" float:right" src="https://media1.tenor.com/images/e4a9a44ecb7895376044e437366f08d4/tenor.gif?itemid=17841668" alt="funny GIF" width="45%" ></img>
     <h:form id="calculadora_form">
+        <h1 style="color: rgb(206, 10, 10); font-size:350%;">Laboratorio 6 <span style="color:#2b2301;">CVDS</span> </h1>
+        <h2 style="color: rgb(7, 1, 0); font-size:200%;" >Calculadora de datos:</h2>
         <h:panelGrid columns="2"> 
-            <h:outputLabel value="Entrada:"/> 
-            <h:inputText id="lista" type="text" binding="#{input}" /> 
-            
-            <h:outputLabel value="Media:" />
-            <h:outputLabel value="#{calculadoraBean.mean}" />
-            <h:outputLabel style="display: none;" value="Moda:" />
-            <h:outputLabel style="display: none;" value="#{calculadoraBean.mode}" />
-            <h:outputLabel value="Desviacion:" />
-            <h:outputLabel value="#{calculadoraBean.standar}" />
-            <h:outputLabel value="Varianza:" />
-            <h:outputLabel value="#{calculadoraBean.variance}" />
-            <h:outputLabel value="Datos ingresados previamente:" />
-            <h:outputLabel value="#{calculadoraBean.oldData}" />
-            
-            <h:commandButton value="Reiniciar" update="calculadora_form" actionListener="#{calculadoraBean.restart}"/>
-            <h:commandButton value="Calcular"  update="calculadora_form" actionListener="#{calculadoraBean.initList(input.value)}"/>
+            <h:outputLabel style="font-size:150%;" value="Entrada:"/> 
+            <h:inputText style="border:6px solid Tomato; font-size:150%; " id="lista" type="text" binding="#{input}" /> 
+            <h:outputLabel style="font-size:150%;"  value="Media:" />
+            <h:outputLabel style="font-size:150%;" value="#{calculadoraBean.mean}" />
+            <h:outputLabel style="font-size:150%;" value="Moda:" />
+            <h:outputLabel style=" font-size:150%;" value="#{calculadoraBean.mode}" />
+            <h:outputLabel style=" font-size:150%;" value="Desviacion:" />
+            <h:outputLabel style=" font-size:150%;" value="#{calculadoraBean.standar}" />
+            <h:outputLabel style=" font-size:150%;" value="Varianza:" />
+            <h:outputLabel style=" font-size:150%;" value="#{calculadoraBean.variance}" />
+            <h:outputLabel style=" font-size:150%;" value="Datos ingresados previamente:" />
+            <h:outputLabel style=" font-size:150%;" value="#{calculadoraBean.oldData}" />
+            <h:commandButton value="Reiniciar" style="background-color: #2b2301; color: #fff; display: inline-block; padding: 5px 13px; font-weight: bold; border-radius: 8px;" update="calculadora_form" actionListener="#{calculadoraBean.restart}"/>
+            <h:commandButton value="Calcular" style="background-color: #2b2301; color: #fff; display: inline-block; padding: 5px 13px; font-weight: bold; border-radius: 8px;" update="calculadora_form" actionListener="#{calculadoraBean.initList(input.value)}"/>
         </h:panelGrid>
     </h:form>
+    <h2 style="color: rgb(7, 1, 0); font-size:200%;" >Autores: Lorenzo Marquez, Nicolas Paez</h2>
     </h:body>
 </html>
