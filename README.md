@@ -17,28 +17,26 @@ Para este ejercicio haga uso de la versión funcional de su aplicación: la rama
 1. Cree (si no la tiene aún) una cuenta en el proveedor PAAS Heroku ([www.heroku.com](www.heroku.com)).
 2. Acceda a su cuenta en Heroku y cree una nueva aplicación:
 
-	![](imagenes/1.png)
+	![](images/1.png)
 
 3. Después de crear su cuenta en Heroku y la respectiva aplicación, genere una llave de API: Opción Manage Account:
 
-	![](img/ManageAccount.png)
+	![](images/2.png)
 	
 	Opción API Key:
-	![](img/GenerateKey.png)
+	![](images/3.png)
 
 4. Ingrese a la plataforma de integración contínua Circle.CI ([www.circleci.com](www.circleci.com)). Para ingresar, basta que se autentique con su usuario de GitHUB.
 5. Seleccione la opción de agregar proyectos. En la organización o usuario de GitHub, seleccione el proyecto al que le va hacer despliegue continuo, y haga clic en "Build Project":
 
-	![](img/AppBuild.png) 
+	![](images/4.png) 
 
 	Una vez se inicie la primera construcción del proyecto, seleccione las opciones del proyecto (project settings)
 
-	![](img/ProjectSettings2.png):
 
 	Vaya a CONTINUOUS DEPLOYMENT/Heroku Deployment, y realice los dos pasos indicados: (1) registrar la llave de Heroku, y (2) asociar su usuario para el despliegue:
 
-	![](img/SetDeployUser.png)
-
+	![](images/5.png)
 
 
 8. Si todo queda correctamente configurado, cada vez que hagan un PUSH al repositorio, CircleCI ejecutará la fase de construcción del proyecto. Para que cuando las pruebas pasen automáticamente se despliegue en Heroku, debe definir en el archivo circle.yml (ubicado en la raíz del proyecto):
@@ -105,6 +103,9 @@ documentación de pruebas, cubrimiento de pruebas y análisis estático (cuando 
 12. Ahora, va a integrar un entorno de Análisis de Calidad de Código a su proyecto, el cual detecte contínuamente defectos asociados al mismo. Autentíquese en [CODACY](https://www.codacy.com ) con su cuenta de GitHUB, y agregue el proyecto antes creado.
 
 13. Cree un archivo README.md para su proyecto, y asocie al mismo dos 'badges', que permitan conocer el estado del proyecto en cualquier momento: uno para [Circle.CI](https://circleci.com/docs/1.0/status-badges/), y otro para [CODACY](https://support.codacy.com/hc/en-us/articles/212799365-Badges). El proyecto usado como referencia, ya incluye dichos 'badges' en su archivo README: [https://github.com/PDSW-ECI/base-proyectos](https://github.com/PDSW-ECI/base-proyectos)
+PARTE II. INTERFAZ GRÁFICA
+Agregue mayor detalle a la interfaz gráfica de la página web para que se vea más amigable al usuario. Busque y agregue estilos, colores de fondo, títulos, centrar la página, etc. cualquier elemento o detalle que pueda mejorar cómo se ve la página y como el usuario la percibe.
+![](images/6.png) 
 ### __Autores__
 Nicolas Torres Páez
 Lorenzo Marquez
