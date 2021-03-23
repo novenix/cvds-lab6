@@ -17,7 +17,7 @@ Para este ejercicio haga uso de la versión funcional de su aplicación: la rama
 1. Cree (si no la tiene aún) una cuenta en el proveedor PAAS Heroku ([www.heroku.com](www.heroku.com)).
 2. Acceda a su cuenta en Heroku y cree una nueva aplicación:
 
-	![](img/HerokuCreateApp.png)
+	![](imagenes/1.png)
 
 3. Después de crear su cuenta en Heroku y la respectiva aplicación, genere una llave de API: Opción Manage Account:
 
