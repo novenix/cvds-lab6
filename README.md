@@ -107,7 +107,7 @@ documentación de pruebas, cubrimiento de pruebas y análisis estático (cuando 
 
 PARTE II. INTERFAZ GRÁFICA
 Agregue mayor detalle a la interfaz gráfica de la página web para que se vea más amigable al usuario. Busque y agregue estilos, colores de fondo, títulos, centrar la página, etc. cualquier elemento o detalle que pueda mejorar cómo se ve la página y como el usuario la percibe.
-![](images/6.png) 
+![](images/6.PNG) 
 ### __Autores__
 Nicolas Torres Páez
 Lorenzo Marquez
